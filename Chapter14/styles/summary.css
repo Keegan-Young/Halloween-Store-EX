@@ -1,0 +1,170 @@
+html{
+    background-image: url("../images/bats.gif");
+    margin: 0;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 900px;
+    margin: auto;
+    border: 3px solid black;
+    background-color: white;
+    box-shadow: 0px 10px 10px 10px black;
+}
+
+/* Header */
+
+header{
+    font-size: 1.4rem;
+    background-image: linear-gradient(45deg, white, orange, black);
+    overflow: hidden;
+}
+
+header h2{
+    text-indent: 3rem;
+    font-size: 150%;
+}
+
+header h3{
+    text-indent: 3rem;
+}
+
+header img{
+    float: left;
+    padding-top: 2.5rem;
+    padding-left: 1rem;
+}
+
+/* Nav Menu */
+
+#nav_menu ul{
+    list-style: none;
+    position: relative;
+}
+
+#nav_menu ul li{
+    float: left;
+}
+
+#nav_menu ul ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+#nav_menu ul ul li{
+    float:none;
+}
+
+#nav_menu ul li:hover > ul{
+    display: block;
+}
+
+#nav_menu > ul::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#nav_menu ul{
+    margin: 0;
+    padding: 0;
+}
+
+#nav_menu ul li a{
+    text-align: center;
+    display: block;
+    padding: 1em 1.1em;
+    width: 144.82px;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+}
+
+#nav_menu ul li a:hover, #nav_menu ul li a:focus{
+    background-color: grey;
+}
+
+/* Section */
+
+section{
+    float: right;
+    padding-top: 1rem;
+    padding-right: 15rem;
+}
+
+section h2{
+    padding-left: 10rem;
+}
+
+/* Table */
+
+table{
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 1rem;
+}
+
+td{
+    padding-left: 1rem;
+}
+
+th{
+    color: gray;
+    padding-right: 2rem;
+}
+
+td a{
+    color: black;
+    padding-right: 1rem;
+}
+
+td a:hover{
+    color: green;
+}
+
+.right{
+    background-color: #F5DEB3;
+    text-align: right;
+}
+
+/* Nav List */
+
+#nav_list ul{
+    list-style-type: none;
+    margin-left: 1.25rem;
+    margin-bottom: 1.5em;
+    padding-top: 1.5rem;
+}
+
+#nav_list ul li{
+    width: 120px;
+    margin-bottom: .5em;
+    border: 2px solid black;
+}
+
+#nav_list ul li a{
+    text-align: center;
+    display: block;
+    padding: .5em 0 .5em 0;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: orange;
+    color: black;
+}
+
+#nav_list ul li a:hover, #nav_list ul li a:focus{
+    background-color: green;
+}
+
+/* Footer */
+
+footer{
+    font-size: 70%;
+    text-align: center;
+    border-top: 3px solid black;
+    height: 2rem;
+    padding-top: 1rem;
+    background-image: linear-gradient(45deg, black, orange, white);
+    clear: both;
+}
